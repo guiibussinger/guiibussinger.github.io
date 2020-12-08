@@ -24,6 +24,12 @@
   color: white !important;
 }
 
+.flex-wrap {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
 .row {
   display: flex;
   flex: 1;
