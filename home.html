@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="src/home.css">
+
+    <title>Portal de filmes</title>
+  </head>
+  <body>
+    <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Resultados da pesquisa</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body"></div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <img width="40" height="40" src="https://i.pinimg.com/originals/43/2c/13/432c135eb727bf28255c89f86678dcbb.png">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav center-content">
+                <li class="nav-item">
+                  <a class="nav-link" href="#lancamentos">Lançamentos</a>
+                </li>
+                <p class="divisor">|</p>
+                <li class="nav-item">
+                    <a class="nav-link" href="#em-destaque">Em destaque</a>
+                </li>
+                <p class="divisor">|</p>
+                <li class="nav-item">
+                  <a class="nav-link" href="#avaliacao">Avaliações</a>
+                </li>
+                <p class="divisor">|</p>
+                <li class="nav-item">
+                  <a class="nav-link" href="#makingof">Entrevistas e Makingof</a>
+                </li>
+                <p class="divisor">|</p>
+                <li class="nav-item">
+                  <a class="nav-link" href="#novidades">Novidades</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input id="searchInput" class="form-control mr-sm-2" type="search" placeholder="Pesquisar Filme" aria-label="Search">
+                <button class="btn btn-outline-secondary my-2 my-sm-0" type="button" onclick="searchModal()">Pesquisar</button>
+            </form>
+            </div>
+      </nav>
+
+      <div id="lancamentos">
+        <h1 class="white-text">Lançamentos</h1>
+        <div class="carousel-container">
+          <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="em-destaque" class="huge-padding">
+        <div class="row title-dropdown">
+          <h1>Em Destaque</h1>
+          <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Categoria: Todos
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" href="#">Aventura</a>
+              <a class="dropdown-item" href="#">Roamnce</a>
+              <a class="dropdown-item" href="#">Comédia</a>
+            </div>
+          </div>
+        </div>
+        <div class="row row-container">
+        </div>
+        <div class="row end-line">
+          <button type="button" class="btn btn-secondary">Carregar mais filmes</button>
+        </div>
+      </div>
+
+      <div id="avaliacao" class="huge-padding">
+        <h1>Avaliações</h1>
+        <div class="row row-container">
+          <div class="rate-card">
+            <img width="120" height="120"src="https://assets.dfb.de/uploads/000/077/181/thumb_Thomas_Lemar.jpg?1493104703">
+            <div>
+              <h3>Guilherme</h3>
+              <p class="rate-text"><b>Avaliação: </b>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ultrices ipsum a eros sodales, ut malesuada est euismod. Nunc auctor vestibulum enim vitae sagittis. Nam interdum, felis eget volutpat pretium, massa mi hendrerit enim, vitae lacinia justo mauris sed diam.</p>
+              <p class="rate-text">Nota: 8 de 10 <b>21/03/2019</b></p>
+            </div>
+          </div>
+          <div class="rate-card">
+            <img width="120" height="120"src="https://www.attractivepartners.co.uk/wp-content/uploads/2017/06/profile.jpg">
+            <div>
+              <h3>Ana</h3>
+              <p class="rate-text"><b>Avaliação: </b>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ultrices ipsum a eros sodales, ut malesuada est euismod. Nunc auctor vestibulum enim vitae sagittis. Nam interdum, felis eget volutpat pretium, massa mi hendrerit enim, vitae lacinia justo mauris sed diam.</p>
+              <p class="rate-text">Nota: 8 de 10 <b>17/09/2020</b></p>
+            </div>
+          </div>
+          <div class="rate-card">
+            <img width="120" height="120"src="https://content-static.upwork.com/blog/uploads/sites/4/2018/08/24115005/katrin-hippler.jpeg">
+            <div>
+              <h3>Deborah</h3>
+              <p class="rate-text"><b>Avaliação: </b>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ultrices ipsum a eros sodales, ut malesuada est euismod. Nunc auctor vestibulum enim vitae sagittis. Nam interdum, felis eget volutpat pretium, massa mi hendrerit enim, vitae lacinia justo mauris sed diam.</p>
+              <p class="rate-text">Nota: 8 de 10 <b>12/10/2018</b></p>
+            </div>
+          </div>
+        </div>
+        <div class="row end-line">
+          <button type="button" class="btn btn-secondary">Carregar mais avaliações</button>
+        </div>
+      </div>
+
+      <div id="makingof" class="huge-padding">
+        <h1 class="white-text">Entrevistas e Making of</h1>
+        <div class="row row-container">
+          <div class="video-card">
+            <iframe width="100%" height="260" src="https://www.youtube.com/embed/G61QhQjsvpw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <p class="video-title"><b>Filme: </b>Vingadores Ultimato</p>
+            <div class="row">
+              <p><b>Diretor: </b>Anthony Russo | Joe Russo</p>
+              <p><b>Roteiro: </b> Christopher Markus | Stephen McFeely</p>
+              <p><b>Lançamento: </b>2019</p>
+            </div>
+          </div>
+          <div class="video-card">
+            <iframe width="100%" height="260" src="https://www.youtube.com/embed/tjsUt6YW9go" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <p class="video-title"><b>Filme: </b>Interstellar</p>
+            <div class="row">
+              <p><b>Diretor: </b>Christopher Nolan</p>
+              <p><b>Roteiro: </b>Christopher Nolan | Jonathan Nolan</p>
+              <p><b>Lançamento: </b>2014</p>
+            </div>
+          </div>
+          <div class="video-card">
+            <iframe width="100%" height="260" src="https://www.youtube.com/embed/l-wUKu_V2Lk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <p class="video-title"><b>Filme: </b>Homem-Aranha no Aranhaverso</p>
+            <div class="row">
+              <p><b>Diretor: </b>Peter Ramsey | Rodney Rothman | Bob Persichetti</p>
+              <p><b>Roteiro: </b>Phil Lord | Rodney Rothman</p>
+              <p><b>Lançamento: </b>2018</p>
+            </div>
+          </div>
+        </div>
+        <div class="row end-line">
+          <button type="button" class="btn btn-secondary">Carregar mais filmes</button>
+        </div>
+      </div>
+
+      <div id="novidades" class="huge-padding">
+        <h1>Novidades</h1>
+        <div class="news-card">
+          <div class="row">
+            <img width="380" height="216" src="https://blenderartists.org/uploads/default/original/4X/a/5/e/a5ee598b1d0794a71b52802e2cab389d8f90f7da.jpg">
+            <div class="news-column">
+              <div>
+                <h2>Buraco negro de Insterstellar baseado em cálculos reais</h2>
+                <p class="rate-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ultrices ipsum a eros sodales, ut malesuada est euismod. Nunc auctor vestibulum enim vitae sagittis. Nam interdum, felis eget volutpat pretium, massa mi hendrerit enim, vitae lacinia justo mauris sed diam.</p>
+              </div>
+              <div class="row">
+                <p>Física</p>
+                <p>Interstellar</p>
+                <p>Buraco Negro</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="row">
+            <img width="380" height="216" src="https://img.ibxk.com.br//ms/images/highlights/000/052/396/49395.jpg">
+            <div class="news-column">
+              <div>
+                <h2>Continuação de Homem Aranha: Longe de casa em gravação!</h2>
+                <p class="rate-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ultrices ipsum a eros sodales, ut malesuada est euismod. Nunc auctor vestibulum enim vitae sagittis. Nam interdum, felis eget volutpat pretium, massa mi hendrerit enim, vitae lacinia justo mauris sed diam.</p>
+              </div>
+              <div class="row">
+                <p>Homem-Aranha</p>
+                <p>Continuação</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="footer" class="row huge-padding">
+          <p>Copyright 2020 - Disciplina de Desenvolvimento de Interfaces Web - <b>ICEI PUC Minas</b></p>
+          <img width="60" height="60" src="https://i.pinimg.com/originals/43/2c/13/432c135eb727bf28255c89f86678dcbb.png">
+      </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="src/api.js"></script>
+  </body>
+</html>

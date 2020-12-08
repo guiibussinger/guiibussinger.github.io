@@ -1,0 +1,222 @@
+.center-content {
+  margin-right: auto !important;
+  margin-left: auto !important;
+  justify-content: center;
+}
+
+.divisor {
+  align-self: center;
+  margin-top: auto !important;
+  margin-bottom: auto !important;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+#lancamentos {
+  padding: 50px 0px 25px;
+  background-color: #23395d;
+}
+
+#lancamentos h1 {
+  text-align: center;
+}
+
+.white-text {
+  color: white !important;
+}
+
+.row {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-left: 0px;
+}
+
+.row p {
+  margin-right: 15px;
+}
+
+.carousel-container {
+  display: block;
+}
+
+.slider-container {
+  min-height: 450px;
+  display: flex !important;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 55px;
+}
+
+.movie-info {
+  height: auto;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  margin-left: 20px;
+  color: white;
+}
+
+.huge-padding {
+  padding: 0px 10%;
+}
+
+#em-destaque {
+  min-height: 450px;
+  margin-top: 40px;
+}
+
+.poster {
+  max-width: 250;
+  max-height: 371;
+}
+
+.row-container {
+  justify-content: space-between;
+  margin-top: 25px;
+}
+
+.title-dropdown {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.end-line {
+  justify-content: flex-end;
+  margin-top: 35px;
+}
+
+#em-destaque img {
+  margin-top: 15px;
+}
+
+.rate-card {
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  min-height: 200px;
+  width: 500px;
+}
+
+.rate-card img {
+  border-radius: 60px;
+  margin-right: 15px;
+}
+
+.rate-text {
+  font-size: 14px;
+}
+
+#makingof {
+  margin-top: 25px;
+  background-color: #23395d;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.video-card {
+  margin-top: 210x;
+  min-height: 200px;
+  width: 500px;
+  color: white;
+}
+
+.video-card p {
+  margin: 0px 5px 0px 0px;
+  padding: 0px;
+}
+
+.video-title {
+  font-size: 24px;
+}
+
+#footer {
+  background-color: #23395d;
+  align-items: center !important;
+  justify-content: space-between;
+  color: white;
+  margin: 0;
+}
+
+#footer p {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+#novidades {
+  min-height: 450px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+#novidades h1 {
+  margin-bottom: 10px;
+}
+
+.news-card {
+  min-height: 230px;
+  margin-top: 15px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid gainsboro;
+}
+
+.news-card .row img {
+  margin-right: 15px;
+}
+
+.news-column {
+  flex-direction: column;
+  flex: 1;
+}
+
+.news-column .row p {
+  margin: 0px 5px 0px 0px;
+  padding: 0px 7px;
+  border-radius: 12px;
+  background-color: #23395d;
+  color: white;
+  font-size: 14px;
+}
+
+#lancamentos a:link {
+  color: white;
+}
+
+#lancamentos a:visited {
+  color: white;
+}
+
+#lancamentos a:hover {
+  color: rgba(255,255,255,.75);;
+}
+
+#lancamentos a:active {
+  color: white;
+}
+
+.row-modal {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 25px;
+}
+
+.modal-margin {
+  margin-left: 10px;
+}
+
+.modal-content a:link {
+  color: black;
+}
+
+.modal-content a:visited {
+  color: black;
+}
+
+.modal-content a:hover {
+  color: rgba(0,0,0,.75);
+}
+
+.modal-content a:active {
+  color: black;
+}
