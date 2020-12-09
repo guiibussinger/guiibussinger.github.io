@@ -27,14 +27,14 @@ const getSliderMovies = async () => {
         sliderFilms = sliderFilms.reduce((acc, item, i) => acc +=
             `<div class="carousel-item ${i === 0 ? "active" : ''}">
                 <div class="slider-container d-none d-md-block flex-wrap">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/${item.videos.results[0].key}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/${item.videos?.results[0].key}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     <div class="movie-info">
                     <a href="https://www.imdb.com/title/${item.imdb_id}">
                         <h2>${item.original_title}</h2>
                         <p><b>Sinopse: </b>${item.overview}</p>
                         ${item.budget ? `<p><b>Orçamento: ${item.budget}</b></p>` : ''}
                         <b>Gêneros:</b>
-                        <p>${item.genres.slice(0,3).map(({name}) => name).join(' | ')}</p>
+                        <p>${item.genres?.slice(0,3).map(({name}) => name).join(' | ')}</p>
                         <b>Avaliação:</b>
                         ${item.vote_average}/10 (IMDb)
                     </a>
